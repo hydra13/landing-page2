@@ -1,9 +1,53 @@
 .container {
   max-width: 1920px;
   margin: auto;
-  padding: 0;
-}
+  padding: 0; }
 
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("/fonts/raleway/raleway-regular.woff2") format("woff2"), url("/fonts/raleway/raleway-regular.woff") format("woff"), url("/fonts/raleway/raleway-regular.ttf") format("ttf"), url("/fonts/raleway/raleway-regular.eot") format("eot");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("/fonts/raleway/raleway-medium.woff2") format("woff2"), url("/fonts/raleway/raleway-medium.woff") format("woff"), url("/fonts/raleway/raleway-medium.ttf") format("ttf"), url("/fonts/raleway/raleway-medium.eot") format("eot");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("/fonts/raleway/raleway-semi-bold.woff2") format("woff2"), url("/fonts/raleway/raleway-semi-bold.woff") format("woff"), url("/fonts/raleway/raleway-semi-bold.ttf") format("ttf"), url("/fonts/raleway/raleway-semi-bold.eot") format("eot");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("/fonts/raleway/raleway-bold.woff2") format("woff2"), url("/fonts/raleway/raleway-bold.woff") format("woff"), url("/fonts/raleway/raleway-bold.ttf") format("ttf"), url("/fonts/raleway/raleway-bold.eot") format("eot");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("/fonts/raleway/raleway-extra-bold.woff2") format("woff2"), url("/fonts/raleway/raleway-extra-bold.woff") format("woff"), url("/fonts/raleway/raleway-extra-bold.ttf") format("ttf"), url("/fonts/raleway/raleway-extra-bold.eot") format("eot");
+  font-style: normal;
+  font-weight: 800; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("/fonts/montserrat/montserrat-regular.woff2") format("woff2"), url("/fonts/montserrat/montserrat-regular.woff") format("woff"), url("/fonts/montserrat/montserrat-regular.ttf") format("ttf"), url("/fonts/montserrat/montserrat-regular.eot") format("eot");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("/fonts/montserrat/montserrat-light.woff2") format("woff2"), url("/fonts/montserrat/montserrat-light.woff") format("woff"), url("/fonts/montserrat/montserrat-light.ttf") format("ttf"), url("/fonts/montserrat/montserrat-light.eot") format("eot");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("/fonts/montserrat/montserrat-extra-light.woff2") format("woff2"), url("/fonts/montserrat/montserrat-extra-light.woff") format("woff"), url("/fonts/montserrat/montserrat-extra-light.ttf") format("ttf"), url("/fonts/montserrat/montserrat-extra-light.eot") format("eot");
+  font-style: normal;
+  font-weight: 200; }
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("/fonts/roboto/roboto-regular.woff2") format("woff2"), url("/fonts/roboto/roboto-regular.woff") format("woff"), url("/fonts/roboto/roboto-regular.ttf") format("ttf"), url("/fonts/roboto/roboto-regular.eot") format("eot");
+  font-style: normal;
+  font-weight: 400; }
 .header {
   max-width: 1920px;
   min-height: 1024px;
@@ -13,149 +57,102 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  padding: 40px;
-}
-
-.header-logo {
-  text-decoration: none;
-  border: 1px solid lightgreen;
-  display: flex;
-  align-items: center;
-}
-
-.header-logo-img {
-  fill: #fff;
-}
-
-.header-logo-name {
-  text-transform: capitalize;
-  color: #fff;
-  font-family: Raleway;
-  font-size: 34px;
-  font-weight: 400;
-  border: 1px solid lightgreen;
-}
-
-.header-logo:hover .header-logo-img {
-  fill: #998675;
-}
-
-.header-logo:hover .header-logo-name {
-  color: #998675;
-}
-
-.header-menu {
-  font-family: Montserrat;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 300;
-  max-width: 700px;
-  border: 1px solid lightgreen;
-}
-
-.header-menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 100%;
-  list-style: none;
-  border: 1px solid lightcyan;
-  padding: 0;
-}
-
-.header-menu-list_item {
-  padding: 8px 15px 8px 15px;
-  border: 1px solid lightseagreen;
-}
-
-.header-menu-list_item a {
-  text-decoration: none;
-  text-transform: capitalize;
-  font-family: Montserrat;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.header-cart {
-  width: 24px;
-  height: 24px;
-  border: 1px solid lightgreen;
-  margin: 14px;
-}
-
-.header-search {
-  width: 24px;
-  height: 24px;
-  border: 1px solid lightgreen;
-  margin: 14px;
-}
-
-.header-slider {
-  border: 1px solid lightcoral;
-  min-width: 100%;
-  max-width: 100%;
-  color: #fff;
-  font-family: Raleway;
-}
-
-.header-slider-slogan {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.header-slider-slogan-caption-above {
-  font-size: 36px;
-  font-weight: 500;
-  display: block;
-  text-align: center;
-  padding: 7px;
-  border: 1px solid lightgoldenrodyellow;
-}
-
-.header-slider-slogan-caption-below {
-  border: 1px solid lightcyan;
-  font-size: 52px;
-  font-weight: 700;
-  text-align: center;
-  display: block;
-  padding: 7px;
-}
-
-.header-slider-slogan-text {
-  padding: 0;
-  margin: 12px;
-  border: 1px solid lightgreen;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  text-align: center;
-  max-width: 600px;
-}
-
-.header-slider-slogan-button {
-  margin: 40px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  max-width: 170px;
-  min-width: 170px;
-  background-color: #998675;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 50px;
-  text-align: center;
-}
-
-.header-slider-arrow-left {
-  display: none;
-}
-
-.header-slider-arrow-right {
-  display: none;
-}
+  padding: 40px; }
+  .header-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center; }
+    .header-logo-img {
+      fill: #fff; }
+    .header-logo-name {
+      text-transform: capitalize;
+      color: #fff;
+      font-family: Raleway;
+      font-size: 34px;
+      font-weight: 400; }
+    .header-logo:hover .header-logo-img {
+      fill: #998675; }
+    .header-logo:hover .header-logo-name {
+      color: #998675; }
+  .header-menu {
+    font-family: Montserrat;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 700px; }
+    .header-menu-list {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 100%;
+      list-style: none;
+      padding: 0; }
+      .header-menu-list_item {
+        padding: 8px 15px 8px 15px; }
+        .header-menu-list_item a {
+          text-decoration: none;
+          text-transform: capitalize;
+          font-family: Montserrat;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 300; }
+          .header-menu-list_item a:hover {
+            color: #c7b299; }
+          .header-menu-list_item a:active {
+            color: #998675; }
+  .header-cart {
+    width: 24px;
+    height: 24px;
+    margin: 14px; }
+  .header-search {
+    width: 24px;
+    height: 24px;
+    margin: 14px; }
+  .header-slogan {
+    min-width: 100%;
+    max-width: 100%;
+    color: #fff;
+    font-family: Raleway;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center; }
+    .header-slogan-caption-above {
+      font-size: 36px;
+      font-weight: 500;
+      display: block;
+      text-align: center;
+      padding: 7px; }
+    .header-slogan-caption-below {
+      font-size: 52px;
+      font-weight: 700;
+      text-align: center;
+      display: block;
+      padding: 7px; }
+    .header-slogan-text {
+      padding: 12px;
+      margin: 0;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: center;
+      max-width: 600px; }
+    .header-slogan-button {
+      margin: 40px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      max-width: 170px;
+      min-width: 170px;
+      background-color: #998675;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: center; }
+  .header-arrow-left {
+    display: none; }
+  .header-arrow-right {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+@mixin connectFont($mainName, $filePath, $weight) {
+  @font-face {
+    font-family: $mainName;
+    src: local($mainName),
+      url('/fonts/'+$filePath+'.woff2') format('woff2'),
+      url('/fonts/'+$filePath+'.woff') format('woff'),
+      url('/fonts/'+$filePath+'.ttf') format('ttf'),
+      url('/fonts/'+$filePath+'.eot') format('eot');
+    font-style: normal;
+    font-weight: $weight;
+  }
+}
+
+// Raleway
+@include connectFont('Raleway', 'raleway/raleway-regular', 400);
+@include connectFont('Raleway', 'raleway/raleway-medium', 500);
+@include connectFont('Raleway', 'raleway/raleway-semi-bold', 600);
+@include connectFont('Raleway', 'raleway/raleway-bold', 700);
+@include connectFont('Raleway', 'raleway/raleway-extra-bold', 800);
+
+//Montserrat
+@include connectFont('Montserrat', 'montserrat/montserrat-regular', 400);
+@include connectFont('Montserrat', 'montserrat/montserrat-light', 300);
+@include connectFont('Montserrat', 'montserrat/montserrat-extra-light', 200);
+
+// Roboto
+@include connectFont('Roboto', 'roboto/roboto-regular', 400);
